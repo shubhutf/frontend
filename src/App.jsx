@@ -68,8 +68,8 @@ function handleLogout() {
             </>
           ) : (
             <>
-              <a href="/login">Login</a>
-              <a href="/register">Register</a>
+              <button onClick={() => navigate("/login")}>Login</button>
+              <button onClick={() => navigate("/register")}>Register</button>
             </>
           )}
         </div>

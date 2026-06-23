@@ -37,7 +37,7 @@ export default function Checkout() {
 
     try {
       await axios.post(
-        "http://localhost:3000/api/orders",
+        "https://amazon-clone-backend-hxsi.onrender.com/api/orders",
         {
           items: cart.map(item => ({
             productId: item._id,

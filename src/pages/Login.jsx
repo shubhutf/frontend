@@ -11,9 +11,9 @@ export default function Login() {
   async function handleSubmit(e) {
     e.preventDefault();
     setError("");
-
+    //https://amazon-clone-backend-hxsi.onrender.com
     try {
-      const { data } = await axios.post("http://localhost:3000/api/auth/login", { email, password });
+      const { data } = await axios.post("https://amazon-clone-backend-hxsi.onrender.com/api/auth/login", { email, password });
       localStorage.setItem("token", data.token);
       localStorage.setItem("user", JSON.stringify(data.user));
       navigate("/");

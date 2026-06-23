@@ -13,7 +13,7 @@ export default function ProductDetail() {
   const [quantity, setQuantity] = useState(1);
 
   useEffect(() => {
-    axios.get(`http://localhost:3000/api/products/${id}`)
+    axios.get(`https://amazon-clone-backend-hxsi.onrender.com/api/products/${id}`)
       .then(res => {
         setProduct(res.data);
         setLoading(false);

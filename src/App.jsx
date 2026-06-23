@@ -23,7 +23,7 @@ function handleLogout() {
 
   // Fetch products from backend when the page loads
   useEffect(() => {
-    axios.get("http://localhost:3000/api/products")
+    axios.get("https://amazon-clone-backend-hxsi.onrender.com/api/products")
       .then(res => res.data)
       .then(data => {
         setProducts(data);

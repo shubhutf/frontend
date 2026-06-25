@@ -253,6 +253,7 @@ body {
   padding: 4rem;
 }
 .cart-empty h2 { margin-bottom: 1rem; }
+
 .cart-empty button {
   padding: 10px 20px;
   background: #111;
@@ -291,12 +292,19 @@ body {
   border: 1px solid #e5e5e5;
 }
 
+.checkout-form h2 { 
+  font-size: 20px; 
+  font-weight: 600; 
+  margin-bottom: 8px; 
+  color: #6b6971; 
+}
+
 .checkout-form input {
   padding: 10px 12px;
   border: 1px solid #ddd;
   border-radius: 8px;
   font-size: 14px;
-  color: #111;
+  color: #f9f6f6;
 }
 
 .form-row {
@@ -314,6 +322,13 @@ body {
   flex-direction: column;
   gap: 10px;
   height: fit-content;
+}
+
+.order-summary h2 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #6b6971; 
 }
 
 .summary-items { display: flex; flex-direction: column; gap: 8px; }
